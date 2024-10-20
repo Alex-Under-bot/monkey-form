@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Formular Monkey</title>
+</head>
+<body>
+    <form id="myForm">
+        <label for="monkey">Are you a monkey?</label>
+        <input type="radio" id="yes1" name="monkey" value="yes">
+        <label for="yes1">Yes</label>
+        <input type="radio" id="yes2" name="monkey" value="yes">
+        <label for="yes2">Yes</label>
+        <input type="submit" value="Submit">
+    </form>
+    <p id="result"></p>
+
+    <script>
+        const form = document.getElementById('myForm');
+        form.addEventListener('submit', (event) => {
+            event.preventDefault();
+            const result = document.getElementById('result');
+            result.textContent = "Hello Mu mu munkey!";
+        });
+    </script>
+</body>
+</html>
